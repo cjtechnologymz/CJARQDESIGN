@@ -115,12 +115,12 @@
     <img src="/slide/Slide3.PNG"></a>
 
 
-            <img id="slide-1" src="/pages/projectos/edificio/slide1.jpg" alt="3D rendering of an imaginary orange planet in space" />
-            <img id="slide-2" src="/pages/projectos/edificio/slide2.png" alt="3D rendering of an imaginary green planet in space" />
-            <img id="slide-1" src="/pages/projectos/edificio/Slide3.jpg" alt="3D rendering of an imaginary orange planet in space" />
-            <img id="slide-2" src="/pages/projectos/edificio/slide4.png" alt="3D rendering of an imaginary green planet in space" />
-            <img id="slide-1" src="/pages/projectos/edificio/Slide4.jpg" alt="3D rendering of an imaginary orange planet in space" />
-            <img id="slide-2" src="/pages/projectos/edificio/slide2.png" alt="3D rendering of an imaginary green planet in space" />
+            <img id="slide-1" src="/pages/projectos/edificio/imagens/slide1.jpg" alt="3D rendering of an imaginary orange planet in space" />
+            <img id="slide-2" src="/pages/projectos/edificio/imagens/slide2.png" alt="3D rendering of an imaginary green planet in space" />
+            <img id="slide-1" src="/pages/projectos/edificio/imagens/Slide3.jpg" alt="3D rendering of an imaginary orange planet in space" />
+            <img id="slide-2" src="/pages/projectos/edificio/imagens/slide4.png" alt="3D rendering of an imaginary green planet in space" />
+            <img id="slide-1" src="/pages/projectos/edificio/imagens/Slide4.jpg" alt="3D rendering of an imaginary orange planet in space" />
+            <img id="slide-2" src="/pages/projectos/edificio/imagens/slide2.png" alt="3D rendering of an imaginary green planet in space" />
 
 
 
@@ -346,14 +346,14 @@ data-aos-easing="ease-in-out">
     <img src="/slide/Slide3.PNG"></a>
 
 
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-1.png" alt="3D rendering of an imaginary orange planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-2.png" alt="3D rendering of an imaginary green planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-3.png" alt="3D rendering of an imaginary green planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-6.png" alt="3D rendering of an imaginary orange planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-7.png"alt="3D rendering of an imaginary green planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-10.png" alt="3D rendering of an imaginary orange planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-13.png" alt="3D rendering of an imaginary green planet in space" />
-    <img id="slide-1" src="/pages/projectos/edificio/CREMILDO PROJECTO-14.png" alt="3D rendering of an imaginary green planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-1.png" alt="3D rendering of an imaginary orange planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-2.png" alt="3D rendering of an imaginary green planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-3.png" alt="3D rendering of an imaginary green planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-6.png" alt="3D rendering of an imaginary orange planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-7.png"alt="3D rendering of an imaginary green planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-10.png" alt="3D rendering of an imaginary orange planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-13.png" alt="3D rendering of an imaginary green planet in space" />
+    <img id="slide-1" src="/pages/projectos/edificio/imagens/CREMILDO PROJECTO-14.png" alt="3D rendering of an imaginary green planet in space" />
 
 
 
@@ -408,9 +408,21 @@ data-aos-easing="ease-in-out">
 
 
 
-
-
-
+<script>
+  var indexValue = 0;
+  function slideShow(){
+    setTimeout(slideShow, 3500);
+    var x;
+    const img = document.querySelectorAll("img");
+    for(x = 0; x < img.length; x++){
+      img[x].style.display = "none";
+    }
+    indexValue++;
+    if(indexValue > img.length){indexValue = 1}
+    img[indexValue -1].style.display = "block";
+  }
+  slideShow();
+</script>
 
 <link rel="stylesheet" href="/styles/global.css">
 
