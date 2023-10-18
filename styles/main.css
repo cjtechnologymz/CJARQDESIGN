@@ -40,6 +40,24 @@ main{
 
 }
 
+#menu{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+#menu-temperature{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+
 
 
 
@@ -160,6 +178,10 @@ img{
 .mobile{
     display: none;
 }
+.video{
+    width:"300";
+     height:"400";
+}
 
 
 
@@ -175,7 +197,6 @@ img{
 }
 
 
- 
 
 
 
@@ -340,6 +361,10 @@ img{
 }
 
 
+.video{
+    width:"300";
+     height:"400";
+}
 
 
     
